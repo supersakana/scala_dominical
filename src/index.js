@@ -1,11 +1,12 @@
+import printMe from './print.js';
+
 function component() {
     const element = document.createElement('div');
   
-    // Lodash, currently included via a script, is required for this line to work
     element.innerHTML = 'Hello Webpack';
+    printMe()
   
     return element;
   }
-  
-  document.body.appendChild(component());
-  
+
+//   document.body.appendChild(component());
