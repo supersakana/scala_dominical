@@ -519,6 +519,14 @@ video {
   display: flex;
 }
 
+.h-screen{
+  height: 100vh;
+}
+
+.w-screen{
+  width: 100vw;
+}
+
 .items-center{
   align-items: center;
 }
@@ -534,6 +542,27 @@ video {
 .gap-x-2{
   -moz-column-gap: 0.5rem;
        column-gap: 0.5rem;
+}
+
+.bg-\[\#202020\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(32 32 32 / var(--tw-bg-opacity));
+}
+
+.bg-\[url\(\'\.\.\/src\/img\/three\.jpg\'\)\]{
+  background-image: url('../src/img/three.jpg');
+}
+
+.bg-cover{
+  background-size: cover;
+}
+
+.bg-center{
+  background-position: center;
+}
+
+.bg-no-repeat{
+  background-repeat: no-repeat;
 }
 
 .px-6{
@@ -566,6 +595,11 @@ video {
 
 .tracking-widest{
   letter-spacing: 0.1em;
+}
+
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 /* npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch */
