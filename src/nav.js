@@ -33,8 +33,8 @@ export default function buildNav() {
 
     links.forEach((link) => {
         const li = document.createElement('li')
-        // li.id = link
-        li.classList.add('hover:text-[#d8a126]', 'duration-500')
+        li.id = link.toLowerCase()
+        li.classList.add('hover:text-[#d8a126]', 'duration-500', 'item')
         li.innerText = link
         list.append(li)
     })
