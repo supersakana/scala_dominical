@@ -591,6 +591,14 @@ video {
   width: 30rem;
 }
 
+.w-\[25rem\]{
+  width: 25rem;
+}
+
+.w-\[10rem\]{
+  width: 10rem;
+}
+
 .cursor-pointer{
   cursor: pointer;
 }
@@ -680,6 +688,21 @@ video {
   line-height: 1.75rem;
 }
 
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-6xl{
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
 .tracking-widest{
   letter-spacing: 0.1em;
 }
@@ -720,6 +743,14 @@ video {
     width: 20rem;
   }
 
+  .lg\:w-\[25rem\]{
+    width: 25rem;
+  }
+
+  .lg\:w-\[26rem\]{
+    width: 26rem;
+  }
+
   .lg\:flex-row{
     flex-direction: row;
   }
@@ -730,6 +761,11 @@ video {
 
   .lg\:text-8xl{
     font-size: 6rem;
+    line-height: 1;
+  }
+
+  .lg\:text-5xl{
+    font-size: 3rem;
     line-height: 1;
   }
 }
