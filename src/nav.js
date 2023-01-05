@@ -1,25 +1,15 @@
 export default function buildNav() {
     const nav = document.createElement('nav')
     nav.classList.add('flex', 'justify-between', 'px-6', 'py-4')
-    
-    const elements = navElements()
-    elements.forEach((e) => {
-        nav.append(e)
-    })
+
+    nav.append(navIcon(), navList())
 
     document.body.prepend(nav)
   }
 
-  function navElements(){
-    const icon = navIcon()
-    const list = navList()
-
-    return [icon, list]
-  }
-
   function navIcon(){
     const icon = document.createElement('ion-icon')
-    icon.classList.add('text-3xl', 'cursor-pointer', 'hover:text-[#d8a126]', 'duration-500')
+    icon.classList.add('text-3xl', 'cursor-pointer', 'hover:text-[#d8a126]', 'duration-500', 'item')
     icon.name = "restaurant-outline"
 
     return icon

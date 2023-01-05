@@ -8,19 +8,9 @@ function homePage(){
   const container = document.createElement('div')
   container.classList.add('elements','flex', 'flex-col', 'lg:flex-row', 'items-center', 'justify-center', 'h-[80vh]', 'gap-x-10', 'gap-y-6', 'mx-4')
 
-  const elements = homeElements()
-  elements.forEach((e) =>{
-    container.append(e)
-  })
+  container.append(homeText(), homeImg())
 
   return container
-}
-
-function homeElements(){
-  const text = homeText()
-  const img = homeImg()
-
-  return [text, img]
 }
 
 function homeText(){

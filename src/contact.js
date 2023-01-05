@@ -7,19 +7,9 @@ function contactPage(){
   const container = document.createElement('div')
   container.classList.add('elements','flex', 'flex-col', 'lg:flex-row', 'items-center', 'justify-center', 'h-[80vh]', 'gap-x-10', 'gap-y-6', 'mx-4')
 
-  const elements = contactElements()
-  elements.forEach((e) =>{
-    container.append(e)
-  })
+  container.append(contactText(), contactImg())
 
   return container
-}
-
-function contactElements(){
-    const text = contactText()
-    const img = contactImg()
-
-    return [text, img]
 }
 
 function contactText(){
