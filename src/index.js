@@ -1,4 +1,5 @@
-import buildPage from './home.js';
+import buildHome from './home.js';
+import buildNav from './nav.js';
 
 function component() {
     const element = document.createElement('div');
@@ -8,6 +9,6 @@ function component() {
     return element;
   }
 
-  buildPage()
-
+  buildNav()
+  buildHome()
   // document.body.appendChild(component());

@@ -1,4 +1,4 @@
-export default function buildPage() {
+export default function buildHome() {
     const content = document.getElementById('content')
     
     content.append(homePage())
@@ -6,7 +6,7 @@ export default function buildPage() {
 
 function homePage(){
   const container = document.createElement('div')
-  container.classList.add('flex', 'flex-col', 'lg:flex-row', 'items-center', 'justify-center', 'h-[92vh]', 'gap-x-10', 'gap-y-6', 'mx-4')
+  container.classList.add('flex', 'flex-col', 'lg:flex-row', 'items-center', 'justify-center', 'h-[80vh]', 'gap-x-10', 'gap-y-6', 'mx-4')
   const elements = homeElements()
 
   elements.forEach((e) =>{
@@ -27,12 +27,10 @@ function homeText(){
   const textBlock = document.createElement('div')
   textBlock.classList.add('text-center', 'lg:text-left')
 
-  // title
   const title = document.createElement('h1')
   title.innerText = "SCALA"
   title.classList.add('text-7xl', 'lg:text-8xl', 'font-logo', 'tracking-widest')
 
-  // sub title
   const subTitle = document.createElement('p')
   subTitle.innerText = "Resturaunt and Bar"
   subTitle.classList.add('text-2xl', 'font-logo')
@@ -46,7 +44,7 @@ function homeImg(){
   const img = document.createElement('img')
   img.src = "../src/img/three.jpg"
   img.alt = "view"
-  img.classList.add('w-[30rem]', 'lg:w-[35rem]', 'rounded-md', 'shadow-xl')
+  img.classList.add('w-[30rem]', 'lg:w-[35rem]', 'rounded-md')
 
   return img
 }
