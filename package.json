@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/supersakana/scala_dominical/issues"
   },
-  "homepage": "https://github.com/supersakana/scala_dominical#readme",
+  "homepage": "https://supersakana.github.io/scala_dominical/",
   "devDependencies": {
     "tailwindcss": "^3.2.4",
     "webpack": "^5.75.0",
