@@ -1,4 +1,4 @@
-import buildPage from './print.js';
+import buildPage from './home.js';
 
 function component() {
     const element = document.createElement('div');

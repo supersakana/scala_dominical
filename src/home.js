@@ -17,9 +17,15 @@ function homePage(){
 }
 
 function homeElements(){
-  // container for header text
-  const titleBlock = document.createElement('div')
-  titleBlock.classList.add('text-center', 'lg:text-left')
+  const text = homeText()
+  const img = homeImg()
+
+  return [text, img]
+}
+
+function homeText(){
+  const textBlock = document.createElement('div')
+  textBlock.classList.add('text-center', 'lg:text-left')
 
   // title
   const title = document.createElement('h1')
@@ -31,13 +37,16 @@ function homeElements(){
   subTitle.innerText = "Resturaunt and Bar"
   subTitle.classList.add('text-2xl', 'font-logo')
 
-  titleBlock.append(title, subTitle)
+  textBlock.append(title, subTitle)
 
-  // home image
-  const homeImg = document.createElement('img')
-  homeImg.src = "../src/img/three.jpg"
-  homeImg.alt = "view"
-  homeImg.classList.add('w-[30rem]', 'lg:w-[35rem]', 'rounded-md', 'shadow-xl')
+  return textBlock
+}
 
-  return [titleBlock, homeImg]
+function homeImg(){
+  const img = document.createElement('img')
+  img.src = "../src/img/three.jpg"
+  img.alt = "view"
+  img.classList.add('w-[30rem]', 'lg:w-[35rem]', 'rounded-md', 'shadow-xl')
+
+  return img
 }
