@@ -11,6 +11,6 @@ function component() {
   }
 
   buildNav()
-  buildHome()
+  // buildHome()
   buildMenu()
   // document.body.appendChild(component());
