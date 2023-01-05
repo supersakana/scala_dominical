@@ -5,12 +5,19 @@ import buildMenu from './menu.js';
 function display() {
     buildNav()
     buildHome()
-    // buildMenu()
 
-    const items = document.querySelectorAll('.item')
-    items.forEach(item => {
+    const navItems = document.querySelectorAll('.item')
+
+    navItems.forEach(item => {
       item.addEventListener('click', () => {
-        console.log(item.id)
+        const elements = document.querySelector('.elements')
+        elements.remove()
+
+        if(item.id == 'menu'){
+          buildMenu()
+        } else {
+          buildHome()
+        }
       })
     });
   }

@@ -6,7 +6,7 @@ export default function buildMenu() {
 
   function menuPage(){
     const container = document.createElement('div')
-    container.classList.add('flex', 'flex-col', 'lg:flex-row', 'items-center', 'justify-center', 'h-full', 'mx-4', 'my-4', 'gap-x-4', 'gap-y-3')
+    container.classList.add('elements', 'flex', 'flex-col', 'lg:flex-row', 'items-center', 'justify-center', 'h-full', 'mx-4', 'my-4', 'gap-x-4', 'gap-y-3')
 
     for(let i = 1; i <= 2; i++){
         const img = document.createElement('img')

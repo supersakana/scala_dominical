@@ -29,7 +29,7 @@ export default function buildNav() {
     const list = document.createElement('ul')
     list.classList.add('flex', 'items-center', 'justify-center', 'gap-x-4', 'text-lg', 'md:text-xl', 'font-logo', 'cursor-pointer')
 
-    const links = ['Home', 'About', 'Menu']
+    const links = ['Home', 'Menu', 'Contact']
 
     links.forEach((link) => {
         const li = document.createElement('li')
