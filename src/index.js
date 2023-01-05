@@ -6,7 +6,6 @@ import buildContact from './contact.js';
 function display() {
     buildNav()
     buildHome()
-    buildContact()
 
     const navItems = document.querySelectorAll('.item')
 
@@ -17,6 +16,8 @@ function display() {
 
         if(item.id == 'menu'){
           buildMenu()
+        } else if(item.id == 'contact'){
+          buildContact()
         } else {
           buildHome()
         }
