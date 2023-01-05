@@ -9,7 +9,7 @@ export default function buildNav() {
 
   function navIcon(){
     const icon = document.createElement('ion-icon')
-    icon.classList.add('text-3xl', 'cursor-pointer', 'hover:text-[#d8a126]', 'duration-500', 'item')
+    icon.classList.add('text-4xl', 'cursor-pointer', 'hover:text-[#d8a126]', 'duration-500', 'item')
     icon.name = "restaurant-outline"
 
     return icon

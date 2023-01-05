@@ -1,6 +1,5 @@
 export default function buildHome() {
     const content = document.getElementById('content')
-    
     content.append(homePage())
   }
 
