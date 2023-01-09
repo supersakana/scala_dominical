@@ -1,3 +1,5 @@
+import View from './img/three.jpg';
+
 export default function buildHome() {
     const content = document.getElementById('content')
     content.append(homePage())
@@ -31,7 +33,7 @@ function homeText(){
 
 function homeImg(){
   const img = document.createElement('img')
-  img.src = "../src/img/three.jpg"
+  img.src = View
   img.alt = "view"
   img.classList.add('w-[30rem]', 'lg:w-[35rem]', 'rounded-md')
 
